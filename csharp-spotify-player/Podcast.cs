@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace csharp_spotify_player
 {
-    internal class Podcast
+    internal class Podcast : ContenutoRiproducibile
     {
         private string nome;
         public int puntate;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csharp_spotify_player
 {
-    internal class Brano
+    internal class Brano : ContenutoRiproducibile
     {
         
         private string nomeCanzone;
@@ -38,18 +38,17 @@ namespace csharp_spotify_player
             Console.WriteLine("MINUTI: " + Minuti + " min");
             Console.WriteLine("--------------------");
         }
-
         public void Play()
         {
-            Console.WriteLine("Riproduzione del brano " + nomeCanzone +" di "+ nomeArtista);
+            Console.WriteLine("il bradno " + nomeCanzone + " di " + nomeArtista + " è in riproduzione");
         }
         public void Pausa()
         {
-            Console.WriteLine("In pausa brano " + nomeCanzone +" di "+ nomeArtista);
+            Console.WriteLine("il brano " + nomeCanzone + " di " + nomeArtista + " è in pausa");
         }
         public void Stop()
         {
-            Console.WriteLine("Messo in stop " +  nomeCanzone +" di "+ nomeArtista);
+            Console.WriteLine("Il brano " + nomeCanzone + " di " + nomeArtista + " è stoppato");
         }
 
     }
